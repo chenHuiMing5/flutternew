@@ -1,18 +1,19 @@
 
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
-
-class TabBarBottomPage extends StatefulWidget{
+import 'NestedTabBarView1.dart';
+import 'MinePage.dart';
+class TabBarsPage extends StatefulWidget{
   @override
-  State<StatefulWidget> createState() =>TabBarBottomPageState();
+  State<StatefulWidget> createState() =>TabBarsPageState();
 }
 
-class TabBarBottomPageState extends State<TabBarBottomPage>{
+class TabBarsPageState extends State<TabBarsPage>{
   int selectedIndex = 0;
   List<Widget> tabList = [
     HomePage(),
-    Container(color: Colors.amber,),
-    Container(color: Colors.green,),
+    NestedTabBarView1(),
+    VideoScreen(),
 
   ];
 
